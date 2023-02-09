@@ -1,0 +1,118 @@
+*{
+    padding:0%;
+    margin:0%;
+}
+
+body{
+    /* Font family from google font specifier */
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #f5f2f2ef;
+    /* background image and its properties */
+    background-image: url(https://images.pexels.com/photos/2649403/pexels-photo-2649403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-repeat: norepeat;
+    background-attachment: fixed;
+}
+/* Desecebdant Selector */
+main img{
+    border: 16px dashed #00ffff;
+}
+/* Adjacent combinator */
+div+ul{
+    display:inline;
+    margin: 10px;
+    padding: 5px;    
+}
+
+.mt{
+    text-align: center;
+}
+.mt1{
+    display: inline-block;
+    background-color: #7d5d60;
+    text-align: center;
+    color: rgb(251, 255, 0);
+    margin: 20px;
+    padding: 20px 15px 5px 15px;
+    border: 6px dashed #13c4b8;
+
+}
+.li1{
+    display:inline;
+    color: #1b0a0aca;
+    background-color: #00ffff;
+    border: 4px dotted #00078b;
+    padding: 5px;
+    margin: 30px 0 0 200px;
+    font-size: 200%;
+}
+/* ID selector */
+#li{
+    display:inline-block;
+    color: #069999;
+    background-color: #7d5d60;
+    font-size: 180%;   
+    padding: 35px 20px 15px 20px;
+    margin: 0px 20px 30px 200px;
+    border: 5px dotted #00ffff;
+}
+/* Adjacent Combinator */
+ul+div{
+    padding: 10px;
+    font-size: 140%;
+    margin: 50px 20px 50px 200px;
+}
+/* Child combinator */
+.one>img{
+    border: 10px dashed #7d5d60;
+    display: inline-block;
+}
+/* General combinator */
+img~p{
+    font-weight: 800;
+}
+#li:hover{
+    background-color: #ceea17;
+    color: #77777d;
+}
+
+a:nth-child(even){
+    background-color: aqua;
+}
+a:nth-child(odd){
+    background-color: #02ff1b;
+}
+
+nav p::before{
+    content: "Let's Go~     ";
+    color:#ceea17;
+}
+
+nav p::after{
+    content: "   ~Let's Go";
+    color:#ceea17;
+}
+nav p::selection{
+    color:#d5ff02;
+    background-color: #52021e;
+}
+div+p{
+    color:rgb(44, 3, 10);
+    font-size: 30px;
+}
+
+#li{
+    height: 50px;
+    background-image: linear-gradient(to top, rgb(44, 7, 7) 20%,#7d5d60 80%);
+}
+.mt1{
+    height: 50px;
+    background-image: linear-gradient(to top, rgb(44, 7, 7) 20%,#7d5d60 80%);
+}
+
+.mt1:hover{
+    color: #a8a2a2;
+} 
+nav a:hover{
+    background-color: #ff00d9;
+    color: #f1f1f8;
+}
